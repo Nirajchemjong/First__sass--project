@@ -1,0 +1,88 @@
+.story{
+    
+ 
+
+    width: 75%;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    padding-left: 9rem;
+    font-size: $default-font-size ;
+    transform: skewX(-12deg); 
+    transition: all 8s;
+    backface-visibility: hidden;
+
+   
+
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside:circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+        overflow: hidden;
+        backface-visibility: hidden;
+     
+    }
+    &__image{
+
+        height: 100%;
+        transform: translateX(-3rem) scaleX(1.2);
+        transition: all .8s;
+        overflow: hidden;
+        &--caption{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, 20%);
+            color: $color-white;
+            font-size: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all .8s;
+            backface-visibility: hidden;
+            opacity: 0;
+           
+            
+        }
+    }
+    &:hover &__image{
+        transform: translateX(-3rem) scaleX(1);
+        filter: blur(3px) brightness(80%);
+        backface-visibility: hidden;
+        overflow: hidden;
+    }
+
+    &:hover &__image--caption{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        
+    }
+    &__text{
+
+      
+        transform:skewX(12deg);
+       
+    }
+    &__bg{
+        position:absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        overflow: hidden;
+        &--video{
+            outline: cover;
+            opacity: .15;
+        }
+    }
+   
+}
