@@ -276,9 +276,20 @@ body {
 
 .form {
   height: 50rem;
-  width: 65%;
   padding-left: 7rem;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+  display: block; }
+  .form__group {
+    font: inherit;
+    font-size: 1.6rem; }
+  .form__input {
+    display: block;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    border: none;
+    width: 90%;
+    border-bottom: 3px solid transparent;
+    color: inherit; }
 
 .book {
   height: 50rem;
@@ -289,13 +300,7 @@ body {
   background-size: 100%; }
   .book__form {
     height: 50rem;
-    width: 100%; }
-
-.form {
-  height: 50rem;
-  width: 65%;
-  padding-left: 7rem;
-  padding-top: 10rem; }
+    width: 50%; }
 
 .story {
   width: 75%;

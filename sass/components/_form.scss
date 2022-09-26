@@ -1,8 +1,27 @@
 
 .form{
     height: 50rem;
-    width: 65%;
+    
     padding-left: 7rem;
     padding-top: 10rem;
+    display: block;
+
+    &__group{
+        font: inherit;
+        font-size: $default-font-size;
+      
+   
+    }
+    &__input{
+        display: block;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        border:none;
+        width: 90%;
+        border-bottom: 3px solid transparent;
+        color: inherit;
+    }
     
-}
+
+    
+  }
