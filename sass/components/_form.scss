@@ -1,16 +1,10 @@
 
 .form{
-    height: 50rem;
+   
     
-    padding-left: 7rem;
-    padding-top: 10rem;
-    display: block;
-
     &__group{
         font: inherit;
         font-size: $default-font-size;
-      
-   
     }
     &__input{
         display: block;
@@ -22,6 +16,9 @@
         color: inherit;
     }
     
+    &__label{
+        margin-top: 1rem;
+    }
 
     
   }

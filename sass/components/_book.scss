@@ -1,6 +1,5 @@
 .book{
     height: 50rem;
-    
     margin: 0 auto;
     border-radius: 3px;
     box-shadow: 0 1.4rem 4rem rgba($color-black, .2);
@@ -13,6 +12,8 @@
     &__form{
         height: 50rem;
         width: 50%;
-        }
+        padding-left: 7rem;
+        padding-top: 10rem;
+      }
 
 }

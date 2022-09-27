@@ -274,22 +274,22 @@ body {
     font-size: 6rem;
     font-weight: 100; }
 
-.form {
-  height: 50rem;
-  padding-left: 7rem;
-  padding-top: 10rem;
-  display: block; }
-  .form__group {
-    font: inherit;
     font-size: 1.6rem; }
-  .form__input {
-    display: block;
-    padding: 1.5rem 2rem;
-    border-radius: 2px;
-    border: none;
-    width: 90%;
-    border-bottom: 3px solid transparent;
-    color: inherit; }
+.form__group {
+  font: inherit;
+  font-size: 1.6rem; }
+
+.form__input {
+  display: block;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border: none;
+  width: 90%;
+  border-bottom: 3px solid transparent;
+  color: inherit; }
+
+.form__label {
+  margin-top: 1rem; }
 
 .book {
   height: 50rem;
@@ -300,7 +300,9 @@ body {
   background-size: 100%; }
   .book__form {
     height: 50rem;
-    width: 50%; }
+    width: 50%;
+    padding-left: 7rem;
+    padding-top: 10rem; }
 
 .story {
   width: 75%;
