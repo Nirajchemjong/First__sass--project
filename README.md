@@ -8,7 +8,11 @@ This project is developed only using HTML and CSS with SASS framework.
 
 To run the project: - 
 Open project from and IDE 
-just Run without debugging or start with debugging. 
+
+>Run -- Npm install -- then 
+> live-server
+
+Join the Show!! 
 
 Thank you! 
 Enjoy cheers. 
