@@ -12,7 +12,6 @@ Open project from and IDE
 >Run -- Npm install -- then 
 > live-server
 
-Join the Show!! 
-
+Enjoy the Show!!      
 Thank you! 
 Enjoy cheers. 
