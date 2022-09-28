@@ -314,10 +314,15 @@ body {
   width: 49%;
   display: inline-block; }
 
+.form__radio--input {
+  display: none;
+  visibility: none; }
+
 .form__radio--label {
   font-size: 1.6rem;
   position: relative;
-  padding-left: 4rem; }
+  padding-left: 4rem;
+  cursor: pointer; }
 
 .form__radio--bottom {
   height: 3rem;
@@ -338,7 +343,11 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    opacity: 0; }
+
+.form__radio--input:checked ~ .form__radio--label .form__radio--bottom::after {
+  opacity: 1; }
 
 .book {
   height: 50rem;
