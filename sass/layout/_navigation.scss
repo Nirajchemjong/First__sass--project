@@ -1,0 +1,99 @@
+.navigation{
+    display: block;
+    
+        &__checkbox{
+            display: none;
+        }
+        &__botton{
+            height: 7rem;
+            width: 7rem;
+            background-color: $color-white;
+            border-radius: 50%;
+            box-shadow: 0 2rem 3rem rgba($color-black, 0.8);
+
+            display: inline-block;
+
+            //position of botton
+
+            position: fixed;
+            top:6rem;
+            right:6rem;
+            z-index: 1055;
+
+        }
+        &__icon{
+
+        }
+        &__background{
+            background-color: $color-primary-light;
+            display: inline-block;
+            //making background positon and circle
+
+            height: 6.5rem;
+            width: 6.5rem;
+            border-radius: 50%;
+            background-image: radial-gradient( rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+            
+            position:fixed;
+            top:6.5rem;
+            right: 6.5rem;
+            z-index: 1000;
+
+            transition: all .8s cubic-bezier(0.86, 0, 0.07, 1);
+        }
+
+        &__checkbox:checked ~ &__background {
+            transform: scale(80);
+
+        } 
+        &__nav{ 
+   
+            height: 100vh;
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 0%; //this is for animation initally width is 0, made 100% after checkbox clicked 
+            z-index: 1020;
+            opacity: 0;
+            transition:  all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55) //cubic is for animation timing and delay;
+            visibility: hidden;
+        }
+        &__list{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            list-style: none;
+      
+        }
+
+        &__checkbox:checked ~ &__nav{
+            opacity: 1;
+            width: 100%;// this makes animation from left to righ 
+            visibility: visible;
+        }
+
+        &__item{
+            
+           
+            margin: 1rem 2rem;
+
+        }
+        &__link{
+            display: inline-block;
+            text-decoration: none;
+            font-size: 4rem;
+            font-weight: 300;
+            color: $color-white;
+           
+            
+
+           
+        
+            
+        }
+
+
+}
