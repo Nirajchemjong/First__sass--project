@@ -532,8 +532,7 @@ body {
     width: 0%;
     z-index: 1020;
     opacity: 0;
-    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    visibility: hidden; }
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .navigation__list {
     position: absolute;
     top: 50%;
@@ -542,18 +541,28 @@ body {
     width: 100%;
     text-align: center;
     list-style: none; }
-  .navigation__item {
-    margin: 1rem 2rem; }
-  .navigation__link {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 4rem;
-    font-weight: 300;
-    color: #fff; }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%;
     visibility: visible; }
+  .navigation__item {
+    margin: 1rem 2rem; }
+  .navigation__link, .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #fff;
+    background-image: linear-gradient(102deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all .4s; }
+    .navigation__link span, .navigation__link:link span, .navigation__link:visited span {
+      margin-right: 1.5rem;
+      display: inline-block; }
+  .navigation__link:hover, .navigation__link:active {
+    color: rgba(40, 180, 133, 0.8);
+    background-position: 100%;
+    transform: translateX(3rem); }
 
 .row {
   max-width: 114rem;
