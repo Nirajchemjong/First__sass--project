@@ -509,7 +509,47 @@ body {
     position: fixed;
     top: 6rem;
     right: 6rem;
-    z-index: 1055; }
+    z-index: 1055;
+    text-align: center; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block; }
+  .navigation__icon {
+    margin-top: 3.5rem;
+    position: relative;
+    transition: all .3s; }
+  .navigation__icon::before {
+    content: "";
+    position: absolute;
+    top: -0.8rem;
+    left: 0;
+    transition: all .3s; }
+  .navigation__icon::after {
+    content: "";
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    transition: all .3s; }
+  .navigation__checkbox:hover ~ .navigation__botton .navigation__icon::before {
+    position: absolute;
+    top: -1rem; }
+  .navigation__checkbox:hover ~ .navigation__botton .navigation__icon::after {
+    position: absolute;
+    top: 1rem; }
+  .navigation__checkbox:checked ~ .navigation__botton .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked ~ .navigation__botton .navigation__icon::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(225deg); }
+  .navigation__checkbox:checked ~ .navigation__botton .navigation__icon::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-225deg); }
   .navigation__background {
     background-color: #7ed56f;
     display: inline-block;
