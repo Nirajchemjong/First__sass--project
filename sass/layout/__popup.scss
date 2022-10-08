@@ -1,0 +1,51 @@
+.section--popup{
+    
+    height: 100vh;
+    background-color: rgba($color-grey-dark-3 , 0.8);
+    width: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 9999;
+}
+.popup__box{
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    display: table;
+    overflow: hidden;
+    background-color: $color-white;
+
+    &--left{
+       width:33.333333%;
+       display: table-cell;
+     
+    }
+    &--right{
+        width: 66.6666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+
+
+    }
+
+}
+.popup__img{
+    display: block;
+    width: 100%;
+}
+.popup__text{
+
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+}
