@@ -7,6 +7,12 @@
     top:0;
     left:0;
     z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+}
+.section--popup:target{
+    opacity: 1;
+    visibility: visible;
 }
 .popup__box{
 
@@ -48,4 +54,26 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #eee;
+}
+
+//closing bar on popup section 
+
+.popup__close,
+.popup__close:link,
+.popup__close:visited
+{
+    text-decoration: none;
+    position:absolute;
+    top:2.5rem;
+    right:2.5rem;
+    line-height: 1;
+    color: #777;
+    font-size: 1.7rem;
+    font-weight: 800;
+    transition: all .2s;
+
+}
+.popup__close:hover{
+    color: $color-primary;
+
 }

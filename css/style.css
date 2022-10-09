@@ -6,6 +6,25 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+/*
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+[1200- 1800] is where our normal styles apply
+1800px +: Big desktop 
+
+
+notes: this is for destop size media query. 
+
+$breakpoint arguement choices: 
+-phone
+-tab-port
+-tab-land
+-big-desktop 
+
+
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
 *,
 *::after,
 *::before {
@@ -15,6 +34,15 @@ Dark green: #28b485
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -677,7 +705,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999; }
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden; }
+
+.section--popup:target {
+  opacity: 1;
+  visibility: visible; }
 
 .popup__box {
   position: absolute;
@@ -710,6 +744,22 @@ body {
   column-count: 2;
   column-gap: 4rem;
   column-rule: 1px solid #eee; }
+
+.popup__close,
+.popup__close:link,
+.popup__close:visited {
+  text-decoration: none;
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  line-height: 1;
+  color: #777;
+  font-size: 1.7rem;
+  font-weight: 800;
+  transition: all .2s; }
+
+.popup__close:hover {
+  color: #55c57a; }
 
 .section-about {
   background-color: #f7f7f7;
